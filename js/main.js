@@ -91,3 +91,13 @@ if (document.documentElement.scrollWidth <= 640) {
     recommendedSlider.destroy();
     recommendedChannelSlider.destroy();
 }
+(function($) {
+    $(window).on("load", function() {
+        $(".sidebar").mCustomScrollbar({
+            theme: 'minimal-dark'
+        });
+        $("body").mCustomScrollbar({
+            theme: 'minimal-dark'
+        });
+    });
+})(jQuery);
